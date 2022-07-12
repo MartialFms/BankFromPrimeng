@@ -7,11 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import {TableModule} from 'primeng/table';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { IndexComponent } from './index/index.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CheckboxModule } from 'primeng/checkbox';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BankDataComponent
+    BankDataComponent,
+    IndexComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     TableModule,
     FormsModule,
     HttpClientModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
