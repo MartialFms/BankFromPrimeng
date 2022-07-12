@@ -1,0 +1,14 @@
+{
+  "accounts": [
+      {"name": "Martial Derand", "balance": 4805, "ref": 7002642},
+      {"name": "Tristan Laclau", "balance": 7891, "ref": 7008541},
+      {"name": "Mathieu Fix", "balance": 1200, "ref": 7007516},
+      {"name": "Sarah Lefort", "balance": 4711, "ref": 7004134},
+      {"name": "Mohamed El Babili", "balance": 7800, "ref": 7008535},
+      {"name": "Caroline Daumas", "balance": 2997, "ref": 7007974},
+      {"name": "Hugo Haage", "balance": 1545, "ref": 7008597},
+      {"name": "Eric Mauler", "balance": 1746, "ref": 7005673}
+  ]
+}
+
+
