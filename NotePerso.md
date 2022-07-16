@@ -4,6 +4,9 @@ mettre dans le angular.json :
 .\node_modules\primeng\resources\themes\lara-dark-purple\theme.css
 
 
+https://animate.style/
+
+
 
 
 Java :
