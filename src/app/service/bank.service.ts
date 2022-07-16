@@ -20,4 +20,11 @@ export class BankService {
       .then(res => <Bank[]>res.accounts)
       .then(accounts => { return accounts; });
     }
+
+    getEvents() {
+      return this.http.get<any>('assets/calendar.json')
+        .toPromise()
+        .then(res => <any[]>res.data)
+        .then(data => { return data; });
+      }
 }

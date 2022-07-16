@@ -1,11 +1,20 @@
 
 @import "../node_modules/primeng/resources/primeng.css";
-@import "../node_modules/primeng/resources/themes/lara-dark-purple/theme.css";
+@import "../node_modules/primeng/resources/themes/tailwind-light/theme.css";
 @import "../node_modules/primeicons/primeicons.css";
 @import "../node_modules/primeflex/primeflex.css";
 
-
+.topbar-gradient {
+  background: linear-gradient(red, rgb(172, 1, 1), red);
+}
 /*
+@import "../node_modules/@fullcalendar/common/main.css";
+@import "../node_modules/@fullcalendar/daygrid/main.css";
+@import "../node_modules/@fullcalendar/timegrid/main.css";
+/*
+
+
+
 lara-dark-purple
 
               "node_modules/primeicons/primeicons.css",
