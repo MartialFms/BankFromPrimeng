@@ -1,3 +1,215 @@
-<router-outlet></router-outlet>
+
+
+<div
+  class="bg-gray-900  flex align-items-center justify-content-between relative lg:static"
+  style="min-height: 80px"
+>
+  <img
+    src="assets/images/blocks/illustration/LogoSgSmall.png"
+    alt="Image"
+    class="mr-0 lg:mr-6 px-6"
+  />
+  <h1 class="text-white text-5xl">SOCIETE GENIALE</h1>
+
+
+
+  <div
+    class="align-items-center px-5 flex-row-reverse flex-grow-1 justify-content-between hidden lg:flex absolute lg:static left-0 top-100 z-1 shadow-2 lg:shadow-none"
+  >
+    <ul
+      class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row border-top-1 border-red-400 lg:border-top-none"
+    >
+      <li>
+        <a
+          pripple=""
+          class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-white hover:text-red-50 hover:bg-gray-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"
+          ><i class="pi pi-inbox text-base lg:text-2xl mr-2 lg:mr-0"></i
+          ><span class="block lg:hidden font-medium">Inbox</span
+          ><span class="p-ink"></span
+        ></a>
+      </li>
+      <li>
+        <a
+          pripple=""
+          class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center text-white hover:text-red-50 hover:bg-gray-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"
+          ><i class="pi pi-bell text-base lg:text-2xl mr-2 lg:mr-0"></i
+          ><span class="block lg:hidden font-medium">Notifications</span
+          ><span class="p-ink"></span
+        ></a>
+      </li>
+      <li class="border-top-1 border-red-400 lg:border-top-none">
+        <a
+        (click)="showLoginModal()"
+          pripple=""
+          class="p-ripple p-element flex px-6 p-3 lg:px-3 lg:py-2 align-items-center hover:bg-gray-600 font-medium border-round cursor-pointer transition-colors transition-duration-150"
+          ><img
+            src="assets/images/blocks/avatars/avatar-f-1.png"
+            class="mr-3 lg:mr-0 border-2 border-red-50"
+            style="width: 32px; height: 32px; border-radius: 50%;"
+          />
+          <div class="block lg:hidden">
+            <div class="text-red-50 font-medium">Josephine Lillard</div>
+            <span class="text-red-100 font-medium text-sm"
+              >Marketing Specialist</span
+            >
+          </div>
+          <span class="p-ink"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- ----Modal---------------------------------------------------------------------->
+<p-dialog header="Login" [(visible)]="displayModal" [modal]="true" [baseZIndex]="10000"
+    [draggable]="true" [resizable]="false">
+
+    <app-login></app-login>
+
+</p-dialog>
+<!-- -------------------------------------------------------------------------->
+<div class="min-h-screen flex relative lg:static surface-ground">
+  <div
+    id="app-sidebar-6"
+    class="h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 select-none w-12rem bg-red-600 animation-duration-300 animation-ease-in-out"
+  >
+    <div class="flex flex-column h-full">
+      <div
+        class="flex align-items-center justify-content-center flex-shrink-0"
+      >
+       <h1 class="text-white">MENU</h1>
+      </div>
+      <div class="px-4">
+        <span class="p-input-icon-left"
+          ><i class="pi pi-search text-red-700"></i
+          ><input
+            type="text"
+            pinputtext=""
+            class="p-inputtext p-component p-element appearance-none border-none bg-white text-white w-full"
+        /></span>
+      </div>
+      <div class="overflow-y-auto">
+        <ul class="list-none p-3 m-0 flex flex-wrap">
+          <li class="w-6 text-center">
+            <a routerLink="/test1"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-home text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Test 1</div>
+          </li>
+          <li class="w-6 text-center">
+            <a routerLink="/test2"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-star-fill text-2xl"></i
+              ><span
+                class="p-ink"
+                style="height: 60px; width: 60px; top: 15.7999px; left: -14px"
+              ></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">
+              Test 2
+            </div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a routerLink="/test3"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-users text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Test 3</div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a routerLink="/test4"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-comments text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Test 4</div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a
+            routerLink="/calendar"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-calendar text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Calendar</div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a routerLink="/dashboard"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-cog text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Dashboard</div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a
+            routerLink="/bankData"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-calendar text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Bankdata</div>
+          </li>
+          <li class="w-6 text-center mt-3">
+            <a routerLink="/index"
+              pripple=""
+              class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-100 hover:bg-red-700 active:bg-red-400 text-red-100 hover:text-white transition-colors transition-duration-150"
+              style="width: 60px; height: 60px; border-radius: 10px"
+              ><i class="pi pi-cog text-2xl"></i><span class="p-ink"></span
+            ></a>
+            <div class="mt-2 text-white font-medium text-sm">Index</div>
+          </li>
+        </ul>
+      </div>
+      <!--     *******************************************    -->
+      <div
+        class="mt-auto border-top-1 border-red-300 p-3 flex justify-content-between"
+      >
+        <a
+          pripple=""
+          class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-500 hover:bg-red-700 active:bg-red-400 text-red-200 hover:text-red-100 transition-colors transition-duration-150"
+          style="width: 40px; height: 40px; border-radius: 10px"
+          ><img
+            src="assets/images/blocks/avatars/circle/avatar-f-6.png"
+            style="width: 24px; height: 24px" /><span class="p-ink"></span></a
+        ><a
+          pripple=""
+          class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-500 hover:bg-red-700 active:bg-red-400 text-red-200 hover:text-red-100 transition-colors transition-duration-150"
+          style="width: 40px; height: 40px; border-radius: 10px"
+          ><i class="pi pi-slack text-xl"></i><span class="p-ink"></span></a
+        ><a
+          pripple=""
+          class="p-ripple p-element cursor-pointer inline-flex align-items-center justify-content-center border-2 border-red-500 hover:bg-red-700 active:bg-red-400 text-red-200 hover:text-red-100 transition-colors transition-duration-150"
+          style="width: 40px; height: 40px; border-radius: 10px"
+          ><i class="pi pi-github text-xl"></i><span class="p-ink"></span
+        ></a>
+      </div>
+    </div>
+  </div>
+  <div class="min-h-screen flex flex-column relative flex-auto">
+
+    <p-scrollPanel [style]="{width: '100%', height: '630px'}" styleClass="custom">
+      <router-outlet></router-outlet>
+  </p-scrollPanel>
+
+
+
+  </div>
+</div>
+<!---->
+<!---->
+
 
 

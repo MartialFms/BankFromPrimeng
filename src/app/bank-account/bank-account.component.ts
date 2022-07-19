@@ -18,4 +18,7 @@ export class BankAccountComponent implements OnInit {
       then(bankAccounts => this.bankAccounts = bankAccounts);
   }
 
+
+
+
 }

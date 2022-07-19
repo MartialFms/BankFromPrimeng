@@ -13,8 +13,12 @@ export class BankDataComponent implements OnInit {
   constructor(private bankService: BankService) { }
 
   ngOnInit() {
+    this.bankService.findAll().subscribe(data => {
+      this.bankAccounts = data;});
+    /*
       this.bankService.getBankAccounts().
       then(bankAccounts => this.bankAccounts = bankAccounts);
+      */
   }
 
 }

@@ -7,7 +7,11 @@ mettre dans le angular.json :
 https://animate.style/
 
 
+https://stackblitz.com/edit/primeng-dialog-demo?file=README.md
+tous les code source + demo
 
+
+calendar dans style dans angular json
 
 Java :
 ---------------------- Entité----------------------------------

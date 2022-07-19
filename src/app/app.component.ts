@@ -9,6 +9,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'bank-project';
 
+  displayModal: boolean = false;
+
+  showLoginModal() {
+      this.displayModal = true;
+  }
 
 }
 

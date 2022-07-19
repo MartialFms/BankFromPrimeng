@@ -1,10 +1,16 @@
+import { AutoCompleteModule } from 'primeng/autocomplete';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {TabViewModule} from 'primeng/tabview';
 import { AppComponent } from './app.component';
 import { BankDataComponent } from './bank-data/bank-data.component';
 import { AppRoutingModule } from './app-routing.module';
-import {TableModule} from 'primeng/table';
+import { ColumnFilter, TableModule } from 'primeng/table';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import {FullCalendarModule} from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin from '@fullcalendar/interaction';
 import { ReactiveFormsModule, FormsModule, NgControl } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { IndexComponent } from './index/index.component';
@@ -36,14 +42,15 @@ import { AgendaCalendarRoutingModule } from './calendar/agenda-calendar-routing.
 import { TopbarComponent } from './topbar/topbar.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { TempComponent } from './temp/temp.component';
+import {CardModule} from 'primeng/card';
 
-/*
+
 FullCalendarModule.registerPlugins([
   dayGridPlugin,
   timeGridPlugin,
   interactionPlugin
 ]);
-*/
+
 
 @NgModule({
   declarations: [
@@ -60,7 +67,7 @@ FullCalendarModule.registerPlugins([
     AgendaCalendarComponent,
     TopbarComponent,
     SidemenuComponent,
-    TempComponent
+    TempComponent,
   ],
   imports: [
     BrowserModule,
@@ -70,13 +77,12 @@ FullCalendarModule.registerPlugins([
     TabMenuModule,
     ToastModule,
     DropdownModule,
-    DialogModule,
     RadioButtonModule,
     FileUploadModule,
     InputSwitchModule,
     AppRoutingModule,
-    TableModule,
     TagModule,
+    TableModule,
     TabViewModule,
     AgendaCalendarRoutingModule,
     FormsModule,
@@ -88,8 +94,13 @@ FullCalendarModule.registerPlugins([
     InputTextModule,
     CalendarModule,
     ButtonModule,
-    TableModule,
-
+    CardModule,
+    DialogModule,
+    AutoCompleteModule,
+    CommonModule,
+    FormsModule,
+    FullCalendarModule,
+    ScrollPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,7 @@ import {BankService} from '../service/bank.service';
     `]
 })
 export class AgendaCalendarComponent implements OnInit {
-  /*
+
 
     events!: any[];
 
@@ -40,6 +40,6 @@ export class AgendaCalendarComponent implements OnInit {
                 dayMaxEvents: true
         };
     }
-    */
-    ngOnInit() {}
+
+
 }

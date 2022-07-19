@@ -4,6 +4,7 @@
 @import "../node_modules/primeicons/primeicons.css";
 @import "../node_modules/primeflex/primeflex.css";
 
+
 .topbar-gradient {
   background: linear-gradient(red, rgb(172, 1, 1), red);
 }

@@ -5,9 +5,14 @@
           <th>Name</th>
           <th>Reference</th>
           <th>Balance</th>
-      </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-account>
+          <tr>
+         <!-- <th *ngFor="let col of columns">
+                <p-columnFilter type="text" [field]="col.field" [matchModeOptions]="matchModeOptions" [matchMode]="'custom-equals'"></p-columnFilter>
+            </th>
+            -->
+        </tr>
+    </ng-template>
+  <ng-template pTemplate="body" let-account >
       <tr>
           <td>{{account.name}}</td>
           <td>{{account.ref}}</td>
@@ -15,3 +20,25 @@
       </tr>
   </ng-template>
 </p-table>
+
+<!-- <p-table #dt [columns]="cols" [value]="bankAccounts" [paginator]="true" [rows]="5">
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns">
+              {{col.header}}
+          </th>
+      </tr>
+      <tr>
+          <th *ngFor="let col of columns">
+              <p-columnFilter type="text" [field]="col.field" [matchModeOptions]="matchModeOptions" [matchMode]="'custom-equals'"></p-columnFilter>
+          </th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+      </tr>
+  </ng-template>
+</p-table> -->

@@ -8,9 +8,14 @@ import {CheckboxModule} from 'primeng/checkbox';
 })
 export class LoginComponent implements OnInit {
 
+  activeIndex: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  logout() {
   }
 
 }
